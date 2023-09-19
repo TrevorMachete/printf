@@ -99,15 +99,3 @@ int _printf(const char *format, ...)
     return count;
 }
 
-/**
- * main - main function to test _printf
- *
- * Return: 0 on success
- */
-int main(void)
-{
-    int num = 12345;
-    _printf("Hello, %s! Here is a number: %+d, % d, %#o, %#x, %#X\n", "world", num, num, num, num, num);
-    return (0);
-}
-
