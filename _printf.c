@@ -29,11 +29,8 @@ int run_printf(const char *format, va_list args, buffer_t *output)
 	int i, wid, prec, ret = 0;
 	char tmp;
 	unsigned char flags, len;
-<<<<<<< HEAD
-	unsigned int (*f)(va_list, buffer_t *, unsigned char, int, int, unsigned char);
-=======
-unsigned int (*f)(va_list, buffer_t *, unsigned char, int, int, unsigned char);
->>>>>>> 4ff81135e2749bea186bcf815789923eb816fccd
+	unsigned int (*f)(va_list, buffer_t *,
+			unsigned char, int, int, unsigned char);
 
 	for (i = 0; *(format + i); i++)
 	{
@@ -91,4 +88,3 @@ int _printf(const char *format, ...)
 
 	return (ret);
 }
-
